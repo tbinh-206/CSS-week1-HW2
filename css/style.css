@@ -9,7 +9,12 @@ header {
 
 nav {
     background-color: #e4bebe;
+    display: inline-block;
+    width: 80%;
 }
+
+/*Chỉ thay đổi ảnh nằm trong nav */
+nav img{ width: 10%;}
 
 main {
     background-color: #f5f5f5;
@@ -33,4 +38,27 @@ h1 {
 
 p {
     line-height: 1.6;
+}
+
+/* Bố cục Grid hai cột */ 
+.grid { 
+    display: grid; 
+    grid-template-columns: 40% 40%; 
+    justify-content: space-around; 
+    align-items: start; 
+    row-gap: 20px; 
+} 
+/* Chỉ thay đổi ảnh trong Grid */ 
+.grid img { 
+    width: 100%; 
+} 
+/* Bố cục Flexbox */ 
+.flex { 
+    display: flex; 
+    flex-wrap: wrap; 
+    justify-content: space-around; 
+}
+.flex img{
+    width: 200px;
+    margin: 10px;
 }
